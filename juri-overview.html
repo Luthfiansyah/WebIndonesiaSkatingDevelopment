@@ -53,6 +53,7 @@
     <div class="site-overlay"></div>
 
 
+  
 
     <!-- Header
     ================================================== -->
@@ -344,7 +345,7 @@
                     </div>
                   </div>
                 </li>
-                <li class=""><a href="club-list.html">Clubs</a>
+                <li class="active"><a href="club-list.html">Clubs</a>
                 </li>
                 
                 <li class=""><a href="#">News</a>
@@ -513,22 +514,122 @@
     
   
 
-    <!-- Page Heading
+    <!-- Player Heading
     ================================================== -->
-    <div class="page-heading">
+    <div class="player-heading">
       <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <h1 class="page-heading__title">Login and <span class="highlight">Register</span></h1>
-            <ol class="page-heading__breadcrumb breadcrumb">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="shop-list.html">Shop</a></li>
-              <li class="active">Login or Register</li>
-            </ol>
+    
+        <div class="player-info__team-logo">
+          <img src="assets/images/logo-lg.png" alt="">
+        </div>
+    
+        <div class="player-info__title player-info__title--mobile">
+          <div class="player-info__number">38</div>
+          <h1 class="player-info__name">
+            <span class="player-info__first-name">Eri</span>
+            <span class="player-info__last-name">Marina</span>
+          </h1>
+        </div>
+    
+        <div class="player-info">
+    
+          <!-- Player Photo -->
+          <div class="player-info__item player-info__item--photo">
+            <figure class="player-info__photo">
+              <img src="assets/images/samples/player-heading-photo.png" alt="">
+            </figure>
           </div>
+          <!-- Player Photo / End -->
+    
+          <!-- Player Details -->
+          <div class="player-info__item player-info__item--details">
+    
+            <div class="player-info__title player-info__title--desktop">
+              <h1 class="player-info__name">
+                <span class="player-info__first-name">Eri</span>
+                <span class="player-info__last-name">Marina</span>
+              </h1>
+            </div>
+    
+            <div class="player-info-details">
+              <div class="player-info-details__item player-info-details__item--height">
+                <h6 class="player-info-details__title">Tinggi</h6>
+                <div class="player-info-details__value">165</div>
+              </div>
+              <div class="player-info-details__item player-info-details__item--weight">
+                <h6 class="player-info-details__title">Berat-Badan</h6>
+                <div class="player-info-details__value">35kg</div>
+              </div>
+              <div class="player-info-details__item player-info-details__item--age">
+                <h6 class="player-info-details__title">Umur</h6>
+                <div class="player-info-details__value">18</div>
+              </div>
+              <div class="player-info-details__item player-info-details__item--college">
+                <h6 class="player-info-details__title">Kuliah/Sekolah</h6>
+                <div class="player-info-details__value">Binus</div>
+              </div>
+              <div class="player-info-details__item player-info-details__item--born">
+                <h6 class="player-info-details__title">Tempat Lahir</h6>
+                <div class="player-info-details__value">Amestris, California. USA</div>
+              </div>
+            </div>
+    
+            <div class="player-info-stats">
+              <div class="player-info-stats__item">
+                <div class="circular">
+                  <div class="circular__bar" data-percent="88" data-track-color="#4c5d6f">
+                    <span class="circular__percents">9.6<small>avg</small></span>
+                  </div>
+                  <span class="circular__label"><strong>Points</strong> per game</span>
+                </div>
+              </div>
+              <div class="player-info-stats__item">
+                <div class="circular">
+                  <div class="circular__bar" data-percent="75" data-track-color="#4c5d6f">
+                    <span class="circular__percents">4.5<small>avg</small></span>
+                  </div>
+                  <span class="circular__label"><strong>Assists</strong> per game</span>
+                </div>
+              </div>
+              <div class="player-info-stats__item">
+                <div class="circular">
+                  <div class="circular__bar" data-percent="60" data-track-color="#4c5d6f">
+                    <span class="circular__percents">2.8<small>avg</small></span>
+                  </div>
+                  <span class="circular__label"><strong>Rebounds</strong> per game</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Player Details / End -->
+    
+          <!-- Player Stats -->
+          <div class="player-info__item player-info__item--stats">
+            <canvas id="player-stats" class="player-info-chart" height="290"></canvas>
+          </div>
+          <!-- Player Stats / End -->
         </div>
       </div>
     </div>
+    
+
+
+
+    <!-- Player Pages Filter -->
+    <nav class="content-filter">
+      <div class="container">
+        <a href="#" class="content-filter__toggle"></a>
+        <ul class="content-filter__list">
+          <li class="content-filter__item "><a href="player-overview.html" class="content-filter__link"><small>Player</small>Overview</a></li>
+          <li class="content-filter__item "><a href="player-stats.html" class="content-filter__link"><small>Player</small>Full Statistics</a></li>
+          <li class="content-filter__item "><a href="player-bio.html" class="content-filter__link"><small>Player</small>Biography</a></li>
+          <li class="content-filter__item "><a href="player-news.html" class="content-filter__link"><small>Player</small>Related News</a></li>
+          <li class="content-filter__item "><a href="player-gallery.html" class="content-filter__link"><small>Player</small>Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Player Pages Filter / End -->
+    
 
     <!-- Content
     ================================================== -->
@@ -537,86 +638,543 @@
 
         <div class="row">
 
-          <div class="col-md-6">
 
-            <!-- Login -->
-            <div class="card">
-              <div class="card__header">
-                <h4>Login to your Account</h4>
+          <!-- Content -->
+          <div class="content col-md-8">
+
+            <!-- Last Game Log -->
+            <div class="card card--has-table">
+              <div class="card__header card__header--has-btn">
+                <h4>Last Event</h4>
+                <!-- <a href="player-stats.html" class="btn btn-default btn-outline btn-xs card-header__button">See complete games log</a> -->
               </div>
               <div class="card__content">
+                <div class="table-responsive">
+                  <table class="table table-hover game-player-result">
+                    <thead>
+                      <tr>
+                        <th class="game-player-result__date">Date</th>
+                        <th class="game-player-result__vs">Event</th>
+                        
+                        <th class="game-player-result__min">Emas</th>
+                        <th class="game-player-result__reb">Perak</th>
+                        <th class="game-player-result__ast">Perunggu</th>
+                        <!-- <th class="game-player-result__blk">BLK</th>
+                        <th class="game-player-result__stl">STL</th>
+                        <th class="game-player-result__pf">PF</th>
+                        <th class="game-player-result__to">TO</th>
+                        <th class="game-player-result__pts">PTS</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="game-player-result__date">Saturday, Mar 24</td>
+                        <td class="game-player-result__vs">
+                          <div class="team-meta">
+                            <figure class="team-meta__logo">
+                              <img src="assets/images/samples/logos/sharks_shield.png" alt="">
+                            </figure>
+                            <div class="team-meta__info">
+                              <h6 class="team-meta__name">Sharks</h6>
+                              <span class="team-meta__place">Marine College</span>
+                            </div>
+                          </div>
+                        </td>
+                      
+                        <td class="game-player-result__min">22</td>
+                        <td class="game-player-result__reb">3</td>
+                        <td class="game-player-result__ast">1</td>
+                        <td class="game-player-result__blk">1</td>
+                        <td class="game-player-result__stl">2</td>
+                        <td class="game-player-result__pf">0</td>
+                        <td class="game-player-result__to">2</td>
+                        <td class="game-player-result__pts">11</td>
+                      </tr>
+                      <tr>
+                        <td class="game-player-result__date">Friday, Mar 16</td>
+                        <td class="game-player-result__vs">
+                          <div class="team-meta">
+                            <figure class="team-meta__logo">
+                              <img src="assets/images/samples/logos/pirates_shield.png" alt="">
+                            </figure>
+                            <div class="team-meta__info">
+                              <h6 class="team-meta__name">L.A Pirates</h6>
+                              <span class="team-meta__place">Bebop Institute</span>
+                            </div>
+                          </div>
+                        </td>
+                        
+                        <td class="game-player-result__min">22</td>
+                        <td class="game-player-result__reb">1</td>
+                        <td class="game-player-result__ast">5</td>
+                        <td class="game-player-result__blk">0</td>
+                        <td class="game-player-result__stl">4</td>
+                        <td class="game-player-result__pf">2</td>
+                        <td class="game-player-result__to">3</td>
+                        <td class="game-player-result__pts">14</td>
+                      </tr>
+                      <tr>
+                        <td class="game-player-result__date">Saturday, Mar 10</td>
+                        <td class="game-player-result__vs">
+                          <div class="team-meta">
+                            <figure class="team-meta__logo">
+                              <img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="">
+                            </figure>
+                            <div class="team-meta__info">
+                              <h6 class="team-meta__name">Lucky Clovers</h6>
+                              <span class="team-meta__place">St. Patrick’s Institute</span>
+                            </div>
+                          </div>
+                        </td>
+                        
+                        <td class="game-player-result__min">11</td>
+                        <td class="game-player-result__reb">4</td>
+                        <td class="game-player-result__ast">2</td>
+                        <td class="game-player-result__blk">0</td>
+                        <td class="game-player-result__stl">3</td>
+                        <td class="game-player-result__pf">5</td>
+                        <td class="game-player-result__to">6</td>
+                        <td class="game-player-result__pts">10</td>
+                      </tr>
+                      <tr>
+                        <td class="game-player-result__date">Friday, Mar 4</td>
+                        <td class="game-player-result__vs">
+                          <div class="team-meta">
+                            <figure class="team-meta__logo">
+                              <img src="assets/images/samples/logos/ocean_kings_shield.png" alt="">
+                            </figure>
+                            <div class="team-meta__info">
+                              <h6 class="team-meta__name">Ocean Kings</h6>
+                              <span class="team-meta__place">Bay College</span>
+                            </div>
+                          </div>
+                        </td>
+                        
+                        <td class="game-player-result__min">14</td>
+                        <td class="game-player-result__reb">3</td>
+                        <td class="game-player-result__ast">5</td>
+                        <td class="game-player-result__blk">2</td>
+                        <td class="game-player-result__stl">0</td>
+                        <td class="game-player-result__pf">1</td>
+                        <td class="game-player-result__to">4</td>
+                        <td class="game-player-result__pts">8</td>
+                      </tr>
+                      <tr>
+                        <td class="game-player-result__date">Saturday, Feb 29</td>
+                        <td class="game-player-result__vs">
+                          <div class="team-meta">
+                            <figure class="team-meta__logo">
+                              <img src="assets/images/samples/logos/red_wings_shield.png" alt="">
+                            </figure>
+                            <div class="team-meta__info">
+                              <h6 class="team-meta__name">Red Wings</h6>
+                              <span class="team-meta__place">Icarus College</span>
+                            </div>
+                          </div>
+                        </td>
+                        
+                        <td class="game-player-result__min">27</td>
+                        <td class="game-player-result__reb">1</td>
+                        <td class="game-player-result__ast">1</td>
+                        <td class="game-player-result__blk">1</td>
+                        <td class="game-player-result__stl">1</td>
+                        <td class="game-player-result__pf">4</td>
+                        <td class="game-player-result__to">5</td>
+                        <td class="game-player-result__pts">12</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Last Game Log / End -->
 
-                <!-- Login Form -->
-                <form action="#">
-                  <div class="form-group">
-                    <label for="login-name">Your Email</label>
-                    <input type="email" name="login-name" id="login-name" class="form-control" placeholder="Enter your email address...">
-                  </div>
-                  <div class="form-group">
-                    <label for="login-password">Your Password</label>
-                    <input type="password" name="login-password" id="login-password" class="form-control" placeholder="Enter your password...">
-                  </div>
-                  <div class="form-group form-group--password-forgot">
-                    <label class="checkbox checkbox-inline">
-                      <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Remember Me
-                      <span class="checkbox-indicator"></span>
-                    </label>
-                    <span class="password-reminder">Forgot your password? <a href="#">Click Here</a></span>
-                  </div>
-                  <div class="form-group form-group--sm">
-                    <a href="shop-account.html" class="btn btn-primary-inverse btn-lg btn-block">Sign in to your account</a>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <button class="btn btn-facebook btn-icon btn-block"><i class="fa fa-facebook"></i> Sign In via Facebook</button>
+            <!-- Lates News -->
+            <div class="card card--clean">
+              <header class="card__header card__header--has-btn">
+                <h4>Player Related News</h4>
+                <a href="blog-1.html" class="btn btn-default btn-outline btn-xs card-header__button">See All Related News</a>
+              </header>
+              <div class="card__content">
+
+                <!-- Posts Grid -->
+                <div class="posts posts--cards post-grid post-grid--2cols post-grid--fitRows row">
+
+                  <div class="post-grid__item col-xs-6">
+                    <div class="posts__item posts__item--card posts__item--category-1 card">
+                      <figure class="posts__thumb">
+                        <div class="posts__cat">
+                          <span class="label posts__cat-label">The Team</span>
+                        </div>
+                        <a href="#"><img src="assets/images/samples/post-img4.jpg" alt=""></a>
+                      </figure>
+                      <div class="posts__inner card__content">
+                        <a href="#" class="posts__cta"></a>
+                        <time datetime="2016-08-23" class="posts__date">August 23rd, 2016</time>
+                        <h6 class="posts__title"><a href="#">The Planetrotters will perform this May 4th at Madison Cube</a></h6>
+                        <div class="posts__excerpt">
+                          Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
+                        </div>
+                      </div>
+                      <footer class="posts__footer card__footer">
+                        <div class="post-author">
+                          <figure class="post-author__avatar">
+                            <img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+                          </figure>
+                          <div class="post-author__info">
+                            <h4 class="post-author__name">James Spiegel</h4>
+                          </div>
+                        </div>
+                        <ul class="post__meta meta">
+                          <li class="meta__item meta__item--views">2369</li>
+                          <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like meta-like--active icon-heart"></i> 530</a></li>
+                          <li class="meta__item meta__item--comments"><a href="#">18</a></li>
+                        </ul>
+                      </footer>
                     </div>
-                    <div class="col-md-6">
-                      <button class="btn btn-twitter btn-icon btn-block"><i class="fa fa-twitter"></i> Sign in via Twitter</button>
+                  </div>
+
+                  <div class="post-grid__item col-xs-6">
+                    <div class="posts__item posts__item--card posts__item--category-1 card">
+                      <figure class="posts__thumb">
+                        <div class="posts__cat">
+                          <span class="label posts__cat-label">The Team</span>
+                        </div>
+                        <a href="#"><img src="assets/images/samples/post-img3.jpg" alt=""></a>
+                      </figure>
+                      <div class="posts__inner card__content">
+                        <a href="#" class="posts__cta"></a>
+                        <time datetime="2016-08-23" class="posts__date">August 23rd, 2016</time>
+                        <h6 class="posts__title"><a href="#">The new eco friendly stadium won a Leafy Award in 2016</a></h6>
+                        <div class="posts__excerpt">
+                          Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
+                        </div>
+                      </div>
+                      <footer class="posts__footer card__footer">
+                        <div class="post-author">
+                          <figure class="post-author__avatar">
+                            <img src="assets/images/samples/avatar-2.jpg" alt="Post Author Avatar">
+                          </figure>
+                          <div class="post-author__info">
+                            <h4 class="post-author__name">Jessica Hoops</h4>
+                          </div>
+                        </div>
+                        <ul class="post__meta meta">
+                          <li class="meta__item meta__item--views">2369</li>
+                          <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
+                          <li class="meta__item meta__item--comments"><a href="#">18</a></li>
+                        </ul>
+                      </footer>
                     </div>
                   </div>
-                </form>
-                <!-- Login Form / End -->
+
+                  <div class="post-grid__item col-xs-6">
+                    <div class="posts__item posts__item--card posts__item--category-1 card">
+                      <figure class="posts__thumb">
+                        <div class="posts__cat">
+                          <span class="label posts__cat-label">The Team</span>
+                        </div>
+                        <a href="#"><img src="assets/images/samples/post-img8.jpg" alt=""></a>
+                      </figure>
+                      <div class="posts__inner card__content">
+                        <a href="#" class="posts__cta"></a>
+                        <time datetime="2016-08-23" class="posts__date">August 23rd, 2016</time>
+                        <h6 class="posts__title"><a href="#">The team is starting a new power breakfast regimen</a></h6>
+                        <div class="posts__excerpt">
+                          Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
+                        </div>
+                      </div>
+                      <footer class="posts__footer card__footer">
+                        <div class="post-author">
+                          <figure class="post-author__avatar">
+                            <img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+                          </figure>
+                          <div class="post-author__info">
+                            <h4 class="post-author__name">James Spiegel</h4>
+                          </div>
+                        </div>
+                        <ul class="post__meta meta">
+                          <li class="meta__item meta__item--views">2369</li>
+                          <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
+                          <li class="meta__item meta__item--comments"><a href="#">18</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </div>
+
+                  <div class="post-grid__item col-xs-6">
+                    <div class="posts__item posts__item--card posts__item--category-1 card">
+                      <figure class="posts__thumb">
+                        <div class="posts__cat">
+                          <span class="label posts__cat-label">The Team</span>
+                        </div>
+                        <a href="#"><img src="assets/images/samples/post-img2.jpg" alt=""></a>
+                      </figure>
+                      <div class="posts__inner card__content">
+                        <a href="#" class="posts__cta"></a>
+                        <time datetime="2016-08-23" class="posts__date">August 23rd, 2016</time>
+                        <h6 class="posts__title"><a href="#">Cheerleader tryouts will start next Friday at 5pm</a></h6>
+                        <div class="posts__excerpt">
+                          Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.
+                        </div>
+                      </div>
+                      <footer class="posts__footer card__footer">
+                        <div class="post-author">
+                          <figure class="post-author__avatar">
+                            <img src="assets/images/samples/avatar-1.jpg" alt="Post Author Avatar">
+                          </figure>
+                          <div class="post-author__info">
+                            <h4 class="post-author__name">James Spiegel</h4>
+                          </div>
+                        </div>
+                        <ul class="post__meta meta">
+                          <li class="meta__item meta__item--views">2369</li>
+                          <li class="meta__item meta__item--likes"><a href="#"><i class="meta-like icon-heart"></i> 530</a></li>
+                          <li class="meta__item meta__item--comments"><a href="#">18</a></li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Post Grid / End -->
 
               </div>
             </div>
-            <!-- Login / End -->
+            <!-- Lates News / End -->
+
           </div>
+          <!-- Content / End -->
 
-          <div class="col-md-6">
+          <!-- Sidebar -->
+          <div class="sidebar col-md-4">
 
-            <!-- Register -->
-            <div class="card">
-              <div class="card__header">
-                <h4>Register Now</h4>
+            <!-- Widget: Social Buttons -->
+            <aside class="widget widget--sidebar widget-social">
+              <a href="#" class="btn-social-counter btn-social-counter--fb" target="_blank">
+                <div class="btn-social-counter__icon">
+                  <i class="fa fa-facebook"></i>
+                </div>
+                <h6 class="btn-social-counter__title">Eri's Facebook Page</h6>
+                <span class="btn-social-counter__count"><span class="btn-social-counter__count-num"></span> Likes</span>
+                <span class="btn-social-counter__add-icon"></span>
+              </a>
+              <a href="#" class="btn-social-counter btn-social-counter--twitter" target="_blank">
+                <div class="btn-social-counter__icon">
+                  <i class="fa fa-twitter"></i>
+                </div>
+                <h6 class="btn-social-counter__title">Eri's Twitter Account</h6>
+                <span class="btn-social-counter__count"><span class="btn-social-counter__count-num"></span> Followers</span>
+                <span class="btn-social-counter__add-icon"></span>
+              </a>
+            </aside>
+            <!-- Widget: Social Buttons / End -->
+            
+
+            <!-- Widget: Featured Player - Alternative without Image -->
+            <aside class="widget card widget--sidebar widget-player widget-player--alt">
+              <div class="widget__title card__header">
+                <h4>Player Main Stats</h4>
               </div>
-              <div class="card__content">
-
-                <!-- Register Form -->
-                <form action="#">
-                  <div class="form-group">
-                    <label for="register-name">Your Email</label>
-                    <input type="email" name="register-name" id="register-name" class="form-control" placeholder="Enter your email address...">
+              <div class="widget__content-secondary">
+            
+                <!-- Player Details -->
+                <div class="widget-player__details">
+            
+                  <div class="widget-player__details-row">
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">2 Points</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">1250</span>
+                      </div>
+                    </div>
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">3 Points</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">680</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="register-password">Your Password</label>
-                    <input type="password" name="register-password" id="register-password" class="form-control" placeholder="Enter your password...">
+            
+                  <div class="widget-player__details-row">
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">Rebounds</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">234</span>
+                      </div>
+                    </div>
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">Assists</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">751</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="repeat-password">Repeat Password</label>
-                    <input type="password" name="repeat-password" id="repeat-password" class="form-control" placeholder="Repeat your password...">
+            
+                  <div class="widget-player__details-row">
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">Steals</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">472</span>
+                      </div>
+                    </div>
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">Blocks</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">565</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group form-group--submit">
-                    <a href="shop-account.html" class="btn btn-default btn-lg btn-block">Create Your Account</a>
+            
+                  <div class="widget-player__details-row">
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">Fouls</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">97</span>
+                      </div>
+                    </div>
+                    <div class="widget-player__details__item">
+                      <div class="widget-player__details-desc-wrapper">
+                        <span class="widget-player__details-holder">
+                          <span class="widget-player__details-label">Game Played</span>
+                          <span class="widget-player__details-desc">In his career</span>
+                        </span>
+                        <span class="widget-player__details-value">104</span>
+                      </div>
+                    </div>
                   </div>
-                </form>
-                <!-- Register Form / End -->
-
+            
+                </div>
+                <!-- Player Details / End -->
+            
               </div>
-            </div>
-            <!-- Register / End -->
+            
+              <div class="widget__content-tertiary widget__content--bottom-decor">
+                <div class="widget__content-inner">
+                  <div class="widget-player__stats row">
+                    <div class="col-xs-4">
+                      <div class="widget-player__stat-item">
+                        <div class="widget-player__stat-circular circular">
+                          <div class="circular__bar" data-percent="88">
+                            <span class="circular__percents">88<small>%</small></span>
+                          </div>
+                          <span class="circular__label">Shot<br> Accuracy</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="widget-player__stat-item">
+                        <div class="widget-player__stat-circular circular">
+                          <div class="circular__bar" data-percent="63">
+                            <span class="circular__percents">63<small>%</small></span>
+                          </div>
+                          <span class="circular__label">Pass<br> Accuracy</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="widget-player__stat-item">
+                        <div class="widget-player__stat-circular circular">
+                          <div class="circular__bar" data-percent="75.5">
+                            <span class="circular__percents">75.5<small>%</small></span>
+                          </div>
+                          <span class="circular__label">Total<br> Efficiency</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <!-- Widget: Featured Player - Alternative without Image / End -->
+            
+
+            <!-- Widget: Player Newslog -->
+            <aside class="widget card widget--sidebar widget-newslog">
+              <div class="widget__title card__header">
+                <h4>Player Newslog</h4>
+              </div>
+              <div class="widget__content card__content">
+                <ul class="newslog">
+                  <li class="newslog__item newslog__item--injury">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli’s</strong> knee fracture is healing properly and will be returning to the field <strong>next week</strong>. </div>
+                      <time class="newslog__date" datetime="2016-01-19">January 19, 2016</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--injury">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> has a knee fracture and he’s gonna be out of the play for <strong>4 months</strong>.</div>
+                      <time class="newslog__date" datetime="2016-09-26">September 26, 2016</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--join">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> is now the <strong>1st Shooting Guard</strong> after being 3rd Shooting Guard for the past year.</div>
+                      <time class="newslog__date" datetime="2016-09-06">September 6, 2016</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--injury">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> has an abductor strain so he will miss the next game against the LA Pirates.</div>
+                      <time class="newslog__date" datetime="2016-03-04">March 4, 2016</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--injury">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> has an abductor strain so he will miss the next game against the LA Pirates.</div>
+                      <time class="newslog__date" datetime="2016-03-04">March 4, 2016</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--award">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> won the <strong>Player of the Year 2014 Award</strong> for the first time.</div>
+                      <time class="newslog__date" datetime="2015-08-17">August 17, 2015</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--injury">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> has a lower back contusion and will miss the next two games.</div>
+                      <time class="newslog__date" datetime="2015-08-05">August 5, 2015</time>
+                    </div>
+                  </li>
+                  <li class="newslog__item newslog__item--join">
+                    <div class="newslog__item-inner">
+                      <div class="newslog__content"><strong>James Girobilli</strong> has joined the team after playing for the California Surfers for a year.</div>
+                      <time class="newslog__date" datetime="2013-06-19">June 19, 2013</time>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <!-- Widget: Player Newslog / End -->
+            
+
           </div>
-
+          <!-- Sidebar / End -->
         </div>
+
       </div>
     </div>
 

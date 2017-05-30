@@ -52,3 +52,56 @@
   margin: 0;
   color: #fff;
   border-radius: 5px; }
+
+.juri-grit__img {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #e4e7ed; }
+  .juri-grit__img img {
+    height: 350px; }
+  .juri-grit__img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)); }
+
+.card {
+  position: relative; }
+  .card .juri__footer {
+    padding-top: 17px 24px;
+    border-top: 1px solid #e4e7ed;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 30px;
+    width: 820px; }
+
+.social-share {
+  position: absolute;
+  right: 23px;
+  top: -10px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1em;
+  font-weight: 700; }
+  .social-share a {
+    padding: 5px; }
+
+.social-share-2 {
+  position: absolute;
+  right: 23px;
+  top: -10px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1em;
+  font-weight: 700; }
+  .social-share-2 a {
+    padding: 5px; }
