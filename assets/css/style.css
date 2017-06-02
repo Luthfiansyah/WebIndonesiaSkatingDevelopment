@@ -156,7 +156,7 @@ body {
   @media (min-width: 992px) {
     .site-wrapper--has-overlay-pushy .site-overlay {
       visibility: visible;
-      opacity: 1;
+      opacity: .7;
       background-color: rgba(0, 0, 0, 0.8); } }
 
 /*
@@ -9548,14 +9548,14 @@ td.team-leader__avg {
   .social-links__item .fa {
     font-size: 12px;
     margin-right: 5px;
-    color: #1E1E1E;
+    color: #fff;
     transition: color 0.2s ease; }
   .social-links__item:last-child {
     margin-right: 0; }
 
 .social-links__link {
   display: inline-block;
-  color: #6b6d70;
+  color: #fff;
   transition: color 0.2s ease; }
   .social-links__link:hover {
     color: #dd0826; }
